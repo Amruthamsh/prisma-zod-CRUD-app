@@ -21,13 +21,11 @@ export async function editPost(formData: FormData, id: string) {
   await prisma.post.update({
     where: { id },
     data: {
-      title: formData.get("title") as string,
-      slug: (formData.get("title") as String)
-        .replace(/\s+/g, "-")
-        .toLowerCase(),
       content: formData.get("content") as string,
     },
   });
+
+  revalidatePath("/posts");
 }
 
 export async function deletePost(id: string) {
