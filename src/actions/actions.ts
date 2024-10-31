@@ -32,4 +32,5 @@ export async function editPost(formData: FormData, id: string) {
 
 export async function deletePost(id: string) {
   await prisma.post.delete({ where: { id } });
+  revalidatePath("/posts");
 }
