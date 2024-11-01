@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a simple Next.js app where you can write, edit and delete posts using Prisma DB and SQL-lite. My main objective with this app is to learn! I'll keep expanding its features.  
 
 ## Getting Started
 
