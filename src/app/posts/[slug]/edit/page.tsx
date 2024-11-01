@@ -30,13 +30,23 @@ export default async function EditPostPage({
               name="content"
               id="content"
               defaultValue={post?.content}
+              className="w-96 h-96 p-5 border border-gray-300 rounded-md"
             />
-            <div className="flex flex-row gap-5">
-              <button type="submit">Save</button>
+            <div className="flex flex-row justify-center gap-4">
+              <button
+                type="submit"
+                className="bg-blue-600 w-16 p-2 text-sm text-white font-bold rounded-md hover:bg-slate-800"
+              >
+                Save
+              </button>
+              <Link
+                href={`/posts/${post!.slug}`}
+                className="bg-red-600 w-16 p-2 text-sm text-white font-bold rounded-md hover:bg-slate-800"
+                replace
+              >
+                Cancel
+              </Link>
             </div>
-            <Link href={`/posts/${post!.slug}`} className="" replace>
-              Cancel
-            </Link>
           </form>
         </>
       )}
