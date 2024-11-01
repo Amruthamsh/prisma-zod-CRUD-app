@@ -1,4 +1,4 @@
-This is a simple Next.js app where you can write, edit and delete posts using Prisma DB and SQL-lite. My main objective with this app is to learn! I'll keep expanding its features.  
+This is a simple Next.js app where you can write, edit and delete posts built using Prisma DB and SQL-lite. My main objective with this app is to learn! 
 
 ## Getting Started
 
